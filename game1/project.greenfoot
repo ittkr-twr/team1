@@ -1,5 +1,9 @@
 #Greenfoot project file
+<<<<<<< HEAD
 class.C.image=baby2.png
+=======
+class.A.image=apple2.png
+>>>>>>> 89af8bce1f2fe808d0a1109f4a026c85a524651f
 editor.fx.0.height=739
 editor.fx.0.width=816
 editor.fx.0.x=552
@@ -22,7 +26,11 @@ readme.x=10
 readme.y=10
 simulation.speed=50
 target1.height=50
+<<<<<<< HEAD
 target1.name=C
+=======
+target1.name=A
+>>>>>>> 89af8bce1f2fe808d0a1109f4a026c85a524651f
 target1.showInterface=false
 target1.type=ClassTarget
 target1.width=80
