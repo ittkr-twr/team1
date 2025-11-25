@@ -5,6 +5,7 @@ class.C.image=baby2.png
 class.D.image=turtle2.png
 class.Deiego.image=\u30C7\u30A3\u30A8\u30B4.png
 class.MyWorld.image=ko-to\ .jpg
+<<<<<<< HEAD
 class.gole.image=\u30B4\u30FC\u30EB2.png
 dependency1.from=MyWorld
 dependency1.to=gole
@@ -15,6 +16,15 @@ editor.fx.0.x=0
 editor.fx.0.y=0
 height=585
 package.numDependencies=1
+=======
+class.Rafael.image=\u30E9\u30D5\u30A1\u30A8\u30EB.png
+editor.fx.0.height=728
+editor.fx.0.width=816
+editor.fx.0.x=911
+editor.fx.0.y=55
+height=585
+package.numDependencies=0
+>>>>>>> c35391b284812a9e43d18a9a96164a2e5345b7b5
 package.numTargets=7
 project.charset=UTF-8
 publish.hasSource=false
@@ -29,7 +39,7 @@ readme.name=@README
 readme.width=47
 readme.x=10
 readme.y=10
-simulation.speed=50
+simulation.speed=47
 target1.height=50
 target1.name=A
 target1.showInterface=false
@@ -59,7 +69,11 @@ target4.width=80
 target4.x=0
 target4.y=0
 target5.height=50
+<<<<<<< HEAD
 target5.name=D
+=======
+target5.name=Rafael
+>>>>>>> c35391b284812a9e43d18a9a96164a2e5345b7b5
 target5.showInterface=false
 target5.type=ClassTarget
 target5.width=80
@@ -82,5 +96,5 @@ target7.y=0
 version=3.0.0
 width=944
 world.lastInstantiated=MyWorld
-xPosition=950
-yPosition=198
+xPosition=854
+yPosition=302
