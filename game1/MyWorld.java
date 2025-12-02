@@ -19,6 +19,8 @@ public class MyWorld extends World
         super(600, 400, 1); 
 
         addObject( new gole(), 300, 25 );
+        
+        addObject( new barrier(), 300, 40);
 
     }
     
