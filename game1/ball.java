@@ -18,6 +18,11 @@ public class ball extends Actor
     }
     public void act() 
     {
-        // Add your action code here.
+        setRotation(270);
+        move(2);
+        Actor actor = getOneIntersectingObject( barrier.class );
+        if( actor != null ){
+            getWorld().removeObject( actor );
+        }
     }    
 }
