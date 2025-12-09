@@ -16,13 +16,18 @@ public class ball extends Actor
     {
         getImage().scale(30,30);
     }
+        int px=0;
+        int py=-2;
     public void act() 
     {
-        setRotation(270);
-        move(2);
+        int x = getX();
+        int y = getY();
+        setLocation(x+px,y+py);
+        
         Actor actor = getOneIntersectingObject( barrier.class );
         if( actor != null ){
             getWorld().removeObject( actor );
+            py=py*-1;
         }
     }    
 }

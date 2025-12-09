@@ -1,19 +1,6 @@
 #Greenfoot project file
-<<<<<<< HEAD
-<<<<<<< HEAD
-class.Defense.image=\u30C7\u30A3\u30A8\u30B4.png
-=======
-<<<<<<< HEAD
-=======
-class.A.image=apple2.png
-class.B.image=smiley1.png
-class.C.image=baby2.png
-class.D.image=turtle2.png
-=======
->>>>>>> 8b5063409a4335eae7873b86c2c5b137eb95b10b
 class.Defense.image=\u30C7\u30A3\u30A8\u30B4.png
 class.Deiego.image=\u30C7\u30A3\u30A8\u30B4.png
->>>>>>> a837c7d73ddb1b5276fb6948a352777c84da3e9f
 class.MyWorld.image=ko-to\ .jpg
 class.Rafael.image=\u30E9\u30D5\u30A1\u30A8\u30EB.png
 class.ball.image=ball.png
@@ -27,52 +14,23 @@ dependency2.to=gole
 dependency2.type=UsesDependency
 dependency3.from=MyWorld
 dependency3.to=barrier
-<<<<<<< HEAD
 dependency3.type=UsesDependency
 dependency4.from=MyWorld
 dependency4.to=Rafael
 dependency4.type=UsesDependency
-=======
-<<<<<<< HEAD
-dependency3.from=MyWorld
-dependency3.to=ball
-dependency3.type=UsesDependency
-editor.fx.0.height=739
-editor.fx.0.width=816
-editor.fx.0.x=976
-editor.fx.0.y=85
-height=585
-package.numDependencies=3
-package.numTargets=6
-=======
->>>>>>> a837c7d73ddb1b5276fb6948a352777c84da3e9f
-=======
-dependency3.type=UsesDependency
-dependency4.from=MyWorld
-dependency4.to=ball
-dependency4.type=UsesDependency
-dependency5.from=ball
-dependency5.to=barrier
+dependency5.from=MyWorld
+dependency5.to=ball
 dependency5.type=UsesDependency
->>>>>>> 8b5063409a4335eae7873b86c2c5b137eb95b10b
+dependency6.from=ball
+dependency6.to=barrier
+dependency6.type=UsesDependency
 editor.fx.0.height=739
 editor.fx.0.width=816
-editor.fx.0.x=54
-editor.fx.0.y=101
+editor.fx.0.x=991
+editor.fx.0.y=76
 height=585
-<<<<<<< HEAD
-<<<<<<< HEAD
-package.numDependencies=4
-package.numTargets=5
-=======
-package.numDependencies=2
-package.numTargets=10
->>>>>>> 3e89871b22ba58e0c81c1b5694e3e250bfd6b6dc
->>>>>>> a837c7d73ddb1b5276fb6948a352777c84da3e9f
-=======
-package.numDependencies=5
+package.numDependencies=6
 package.numTargets=7
->>>>>>> 8b5063409a4335eae7873b86c2c5b137eb95b10b
 project.charset=UTF-8
 publish.hasSource=false
 publish.locked=true
@@ -95,85 +53,33 @@ target1.width=80
 target1.x=0
 target1.y=0
 target2.height=50
-<<<<<<< HEAD
-<<<<<<< HEAD
-target2.name=barrier
-=======
-<<<<<<< HEAD
-target2.name=ball
-=======
-target2.name=A
->>>>>>> 3e89871b22ba58e0c81c1b5694e3e250bfd6b6dc
->>>>>>> a837c7d73ddb1b5276fb6948a352777c84da3e9f
-=======
 target2.name=gole
->>>>>>> 8b5063409a4335eae7873b86c2c5b137eb95b10b
 target2.showInterface=false
 target2.type=ClassTarget
 target2.width=80
 target2.x=0
 target2.y=0
 target3.height=50
-<<<<<<< HEAD
-<<<<<<< HEAD
-target3.name=Rafael
-=======
-target3.name=B
->>>>>>> 3e89871b22ba58e0c81c1b5694e3e250bfd6b6dc
->>>>>>> a837c7d73ddb1b5276fb6948a352777c84da3e9f
-=======
 target3.name=barrier
->>>>>>> 8b5063409a4335eae7873b86c2c5b137eb95b10b
 target3.showInterface=false
 target3.type=ClassTarget
 target3.width=80
 target3.x=0
 target3.y=0
 target4.height=50
-<<<<<<< HEAD
-<<<<<<< HEAD
-target4.name=Defense
-=======
-<<<<<<< HEAD
 target4.name=Rafael
-=======
-target4.name=barrier
->>>>>>> 3e89871b22ba58e0c81c1b5694e3e250bfd6b6dc
->>>>>>> a837c7d73ddb1b5276fb6948a352777c84da3e9f
-=======
-target4.name=Rafael
->>>>>>> 8b5063409a4335eae7873b86c2c5b137eb95b10b
 target4.showInterface=false
 target4.type=ClassTarget
 target4.width=80
 target4.x=0
 target4.y=0
 target5.height=50
-<<<<<<< HEAD
-<<<<<<< HEAD
-target5.name=MyWorld
-=======
-<<<<<<< HEAD
-target5.name=MyWorld
-=======
-target5.name=C
->>>>>>> 3e89871b22ba58e0c81c1b5694e3e250bfd6b6dc
->>>>>>> a837c7d73ddb1b5276fb6948a352777c84da3e9f
-=======
 target5.name=Defense
->>>>>>> 8b5063409a4335eae7873b86c2c5b137eb95b10b
 target5.showInterface=false
 target5.type=ClassTarget
 target5.width=80
 target5.x=0
 target5.y=0
-<<<<<<< HEAD
-version=3.0.0
-width=944
-world.lastInstantiated=MyWorld
-xPosition=76
-yPosition=168
-=======
 target6.height=50
 target6.name=MyWorld
 target6.showInterface=false
@@ -191,12 +97,5 @@ target7.y=0
 version=3.0.0
 width=944
 world.lastInstantiated=MyWorld
-<<<<<<< HEAD
-xPosition=889
-yPosition=333
->>>>>>> 3e89871b22ba58e0c81c1b5694e3e250bfd6b6dc
->>>>>>> a837c7d73ddb1b5276fb6948a352777c84da3e9f
-=======
 xPosition=949
 yPosition=140
->>>>>>> 8b5063409a4335eae7873b86c2c5b137eb95b10b
