@@ -25,7 +25,7 @@ public class MyWorld extends World
         }
 
         addObject( new gole(), 300, 25 );
-
+        
         addObject( new barrier(), 300, 40);
         
         addObject( new ball(), 300, 300);
