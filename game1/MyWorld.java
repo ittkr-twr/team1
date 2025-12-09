@@ -26,6 +26,7 @@ public class MyWorld extends World
         
         addObject(new Rafael(), 300, 400);
 
+
     }
     
     
