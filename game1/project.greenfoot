@@ -1,6 +1,5 @@
 #Greenfoot project file
 class.Defense.image=\u30C7\u30A3\u30A8\u30B4.png
-class.Deiego.image=\u30C7\u30A3\u30A8\u30B4.png
 class.MyWorld.image=ko-to\ .jpg
 class.Rafael.image=\u30E9\u30D5\u30A1\u30A8\u30EB.png
 class.ball.image=ball.png
@@ -29,8 +28,13 @@ editor.fx.0.width=816
 editor.fx.0.x=991
 editor.fx.0.y=76
 height=585
+<<<<<<< HEAD
 package.numDependencies=6
 package.numTargets=7
+=======
+package.numDependencies=5
+package.numTargets=6
+>>>>>>> aeb480dc4613275c77337acb79491dbe63e76b59
 project.charset=UTF-8
 publish.hasSource=false
 publish.locked=true
@@ -87,13 +91,6 @@ target6.type=ClassTarget
 target6.width=80
 target6.x=0
 target6.y=0
-target7.height=50
-target7.name=Deiego
-target7.showInterface=false
-target7.type=ClassTarget
-target7.width=80
-target7.x=0
-target7.y=0
 version=3.0.0
 width=944
 world.lastInstantiated=MyWorld
