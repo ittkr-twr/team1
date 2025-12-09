@@ -21,10 +21,16 @@ public class MyWorld extends World
         addObject(d, 300, 50);
 
         addObject( new gole(), 300, 25 );
+
+        addObject( new barrier(), 300, 40);
         
+<<<<<<< HEAD
         addObject( new barrier(), 300, 40);
         
         addObject(new Rafael(), 300, 400);
+=======
+        addObject( new ball(), 300, 300);
+>>>>>>> a837c7d73ddb1b5276fb6948a352777c84da3e9f
 
 
     }
