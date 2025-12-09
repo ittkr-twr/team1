@@ -1,4 +1,12 @@
 #Greenfoot project file
+<<<<<<< HEAD
+=======
+class.A.image=apple2.png
+class.B.image=smiley1.png
+class.C.image=baby2.png
+class.D.image=turtle2.png
+class.Defense.image=\u30C7\u30A3\u30A8\u30B4.png
+>>>>>>> 3e89871b22ba58e0c81c1b5694e3e250bfd6b6dc
 class.Deiego.image=\u30C7\u30A3\u30A8\u30B4.png
 class.MyWorld.image=ko-to\ .jpg
 class.Rafael.image=\u30E9\u30D5\u30A1\u30A8\u30EB.png
@@ -6,11 +14,12 @@ class.ball.image=ball.png
 class.barrier.image=\u30D0\u30EA\u30A2.png
 class.gole.image=\u30B4\u30FC\u30EB2.png
 dependency1.from=MyWorld
-dependency1.to=gole
+dependency1.to=Defense
 dependency1.type=UsesDependency
 dependency2.from=MyWorld
-dependency2.to=barrier
+dependency2.to=gole
 dependency2.type=UsesDependency
+<<<<<<< HEAD
 dependency3.from=MyWorld
 dependency3.to=ball
 dependency3.type=UsesDependency
@@ -21,6 +30,15 @@ editor.fx.0.y=85
 height=585
 package.numDependencies=3
 package.numTargets=6
+=======
+editor.fx.0.height=739
+editor.fx.0.width=816
+editor.fx.0.x=552
+editor.fx.0.y=100
+height=585
+package.numDependencies=2
+package.numTargets=10
+>>>>>>> 3e89871b22ba58e0c81c1b5694e3e250bfd6b6dc
 project.charset=UTF-8
 publish.hasSource=false
 publish.locked=true
@@ -42,43 +60,100 @@ target1.type=ClassTarget
 target1.width=80
 target1.x=0
 target1.y=0
+target10.height=50
+target10.name=Deiego
+target10.showInterface=false
+target10.type=ClassTarget
+target10.width=80
+target10.x=0
+target10.y=0
 target2.height=50
+<<<<<<< HEAD
 target2.name=ball
+=======
+target2.name=A
+>>>>>>> 3e89871b22ba58e0c81c1b5694e3e250bfd6b6dc
 target2.showInterface=false
 target2.type=ClassTarget
 target2.width=80
 target2.x=0
 target2.y=0
+<<<<<<< HEAD
 target3.height=70
 target3.name=barrier
+=======
+target3.height=50
+target3.name=B
+>>>>>>> 3e89871b22ba58e0c81c1b5694e3e250bfd6b6dc
 target3.showInterface=false
 target3.type=ClassTarget
 target3.width=120
 target3.x=0
 target3.y=0
 target4.height=50
+<<<<<<< HEAD
 target4.name=Rafael
+=======
+target4.name=barrier
+>>>>>>> 3e89871b22ba58e0c81c1b5694e3e250bfd6b6dc
 target4.showInterface=false
 target4.type=ClassTarget
 target4.width=80
 target4.x=0
 target4.y=0
 target5.height=50
+<<<<<<< HEAD
 target5.name=MyWorld
+=======
+target5.name=C
+>>>>>>> 3e89871b22ba58e0c81c1b5694e3e250bfd6b6dc
 target5.showInterface=false
 target5.type=ClassTarget
 target5.width=80
 target5.x=0
 target5.y=0
 target6.height=50
+<<<<<<< HEAD
 target6.name=Deiego
+=======
+target6.name=D
+>>>>>>> 3e89871b22ba58e0c81c1b5694e3e250bfd6b6dc
 target6.showInterface=false
 target6.type=ClassTarget
 target6.width=80
 target6.x=0
 target6.y=0
+<<<<<<< HEAD
 version=3.0.0
 width=944
 world.lastInstantiated=MyWorld
 xPosition=971
 yPosition=237
+=======
+target7.height=50
+target7.name=Rafael
+target7.showInterface=false
+target7.type=ClassTarget
+target7.width=80
+target7.x=0
+target7.y=0
+target8.height=50
+target8.name=Defense
+target8.showInterface=false
+target8.type=ClassTarget
+target8.width=80
+target8.x=0
+target8.y=0
+target9.height=50
+target9.name=MyWorld
+target9.showInterface=false
+target9.type=ClassTarget
+target9.width=80
+target9.x=0
+target9.y=0
+version=3.0.0
+width=944
+world.lastInstantiated=MyWorld
+xPosition=889
+yPosition=333
+>>>>>>> 3e89871b22ba58e0c81c1b5694e3e250bfd6b6dc
