@@ -9,7 +9,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Defense extends Actor
 {
-    public Defense() {
+    public Defense() 
+    {
         getImage().scale(100, 150);
     }
 
