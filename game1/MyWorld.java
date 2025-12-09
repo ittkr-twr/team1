@@ -17,8 +17,12 @@ public class MyWorld extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
-        Defense d = new Defense();
-        addObject(d, 300, 50);
+        
+        for(int i=0; i<3; i++) {
+            for(int j=0; j<7; j++) {
+                addObject(new Defense(), 150 + 50*j, 80 + i*50);
+            }
+        }
 
         addObject( new gole(), 300, 25 );
 
