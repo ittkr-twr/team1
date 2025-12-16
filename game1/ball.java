@@ -16,18 +16,32 @@ public class ball extends Actor
     {
         getImage().scale(30,30);
     }
-        int px=0;
-        int py=-2;
+    
+    int px=0;
+    int py=-2;
+    
     public void act() 
     {
         int x = getX();
         int y = getY();
         setLocation(x+px,y+py);
-        
-        Actor actor = getOneIntersectingObject( barrier.class );
-        if( actor != null ){
-            getWorld().removeObject( actor );
+
+        Actor actor1 = getOneIntersectingObject( barrier.class );
+        if( actor1 != null ){
+            getWorld().removeObject( actor1 );
             py=py*-1;
         }
-    }    
+        Actor actor2 = getOneIntersectingObject( Rafael.class );
+        if( actor2 != null ){
+            py=py*-1;
+            px=px*-1;
+            if( Greenfoot.isKeyDown( "right" ) ){
+                px=2;
+            }
+            if( Greenfoot.isKeyDown( "left" ) ){
+                px=-2;
+            }
+        }    
+    }
 }
+

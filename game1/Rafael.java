@@ -9,7 +9,11 @@ public class Rafael extends Actor {
 
     public void act() 
     {
-        // Add your action code here.
-        
+        if( Greenfoot.isKeyDown( "right" ) ){
+            move(4);
+        }
+        if( Greenfoot.isKeyDown( "left" ) ){
+            move(-4);
+        }
     }
 }
