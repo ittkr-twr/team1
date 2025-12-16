@@ -10,8 +10,8 @@ public class ball extends Actor
         setRotation(270);
     }
 
-    int px=0;
-    int py=-2;
+    int px= Math.random() < 0.5 ? 3 : -3;
+    int py=-3;
 
     public void act() 
     {
@@ -19,16 +19,10 @@ public class ball extends Actor
             getWorld().showText("CLEAR!", 300, 200);
             Greenfoot.stop();
         }
-        
+
         int x = getX();
         int y = getY();
         setLocation(x+px,y+py);
-
-        Actor actor = getOneIntersectingObject( barrier.class );
-        if( actor != null ){
-            getWorld().removeObject( actor );
-            py=py*-1;
-        }
 
         Actor actor1 = getOneIntersectingObject( barrier.class );
         if( actor1 != null ){
@@ -38,20 +32,20 @@ public class ball extends Actor
 
         Actor actor2 = getOneIntersectingObject( Rafael.class );
         if( actor2 != null ){
-            py=py*-1;
-            px=px*-1;
-            if( Greenfoot.isKeyDown( "right" ) ){
-                px=2;
-            }
-            if( Greenfoot.isKeyDown( "left" ) ){
-                px=-2;
-            }
+            py=Math.abs(py) * -1;
         }
 
         Actor actor3 = getOneIntersectingObject( Defense.class );
         if( actor3 != null ){
+            setLocation( getX(), getY() - py );
+            if( isTouching( Defense.class ) ){ 
+                px = px * -1; 
+                setLocation( getX(), getY() + py );
+            } else {
+                setLocation( getX(), getY() + py );
+                py = py * -1; 
+            }
             getWorld().removeObject( actor3 );
-            py=py*-1;
         }
 
         checkEdge();
