@@ -3,7 +3,9 @@ import greenfoot.*;
 public class Rafael extends Actor
 {
     private int speed = 5;
-
+    
+    Hantei hantei = null;
+    
     public Rafael()
     {
         getImage().scale(100, 150);
@@ -12,6 +14,14 @@ public class Rafael extends Actor
     public void act() 
     {
         moveLeftRight();
+        
+        if(hantei == null){
+            hantei = new Hantei();
+            hantei.getImage().scale( 50, 120 );
+            hantei.getImage().setTransparency(0);
+            getWorld().addObject(hantei,0,0);
+        }
+        hantei.setLocation(getX(),getY());
     }
     
     private void moveLeftRight()

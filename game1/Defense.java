@@ -11,7 +11,7 @@ public class Defense extends Actor
 {
     public Defense() 
     {
-        getImage().scale(100, 150);
+        getImage().scale(80, 120);
     }
 
     public void act() 

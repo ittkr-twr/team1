@@ -20,7 +20,7 @@ public class MyWorld extends World
         
         for(int i=0; i<3; i++) {
             for(int j=0; j<7; j++) {
-                addObject(new Defense(), 150 + 50*j, 80 + i*50);
+                addObject(new Defense(), 80 + 70*j, 80 + i*60);
             }
         }
 
@@ -34,7 +34,7 @@ public class MyWorld extends World
 
 
 
-        setActOrder(gole.class, barrier.class, Defense.class);
+        setActOrder(Rafael.class,gole.class, barrier.class, Defense.class);
 
     }
     

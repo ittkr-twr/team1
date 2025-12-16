@@ -2,7 +2,7 @@ import greenfoot.*;
 
 public class ball extends Actor
 {
-    private int speed = 2;
+
 
     public ball()
     {
@@ -11,7 +11,7 @@ public class ball extends Actor
     }
 
     int px=0;
-    int py=-2;
+    int py=-4;
 
     public void act() 
     {
@@ -22,13 +22,7 @@ public class ball extends Actor
         
         int x = getX();
         int y = getY();
-        setLocation(x+px,y+py);
-
-        Actor actor = getOneIntersectingObject( barrier.class );
-        if( actor != null ){
-            getWorld().removeObject( actor );
-            py=py*-1;
-        }
+        
 
         Actor actor1 = getOneIntersectingObject( barrier.class );
         if( actor1 != null ){
@@ -36,15 +30,22 @@ public class ball extends Actor
             py=py*-1;
         }
 
-        Actor actor2 = getOneIntersectingObject( Rafael.class );
+        Actor actor2 = getOneIntersectingObject( Hantei.class );
         if( actor2 != null ){
-            py=py*-1;
-            px=px*-1;
+            if( getY() >= 325 )
+            {
+                py=py*-1;
+            }
+            
             if( Greenfoot.isKeyDown( "right" ) ){
-                px=2;
+                px=4;
             }
             if( Greenfoot.isKeyDown( "left" ) ){
-                px=-2;
+                px=-4;
+            }
+            if( getY() < 325)
+            {
+                px=px*-1;
             }
         }
 
@@ -53,6 +54,8 @@ public class ball extends Actor
             getWorld().removeObject( actor3 );
             py=py*-1;
         }
+        
+        setLocation(x+px,y+py);
 
         checkEdge();
     }   
