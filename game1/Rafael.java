@@ -13,6 +13,7 @@ public class Rafael extends Actor
     {
         moveLeftRight();
     }
+    
     private void moveLeftRight()
     {
         if (Greenfoot.isKeyDown("left")) {
