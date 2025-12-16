@@ -32,14 +32,7 @@ public class ball extends Actor
 
         Actor actor2 = getOneIntersectingObject( Rafael.class );
         if( actor2 != null ){
-            py=py*-1;
-            px=px*-1;
-            if( Greenfoot.isKeyDown( "right" ) ){
-                px=2;
-            }
-            if( Greenfoot.isKeyDown( "left" ) ){
-                px=-2;
-            }
+            py=Math.abs(py) * -1;
         }
 
         Actor actor3 = getOneIntersectingObject( Defense.class );
