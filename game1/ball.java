@@ -19,16 +19,10 @@ public class ball extends Actor
             getWorld().showText("CLEAR!", 300, 200);
             Greenfoot.stop();
         }
-        
+
         int x = getX();
         int y = getY();
         setLocation(x+px,y+py);
-
-        Actor actor = getOneIntersectingObject( barrier.class );
-        if( actor != null ){
-            getWorld().removeObject( actor );
-            py=py*-1;
-        }
 
         Actor actor1 = getOneIntersectingObject( barrier.class );
         if( actor1 != null ){
@@ -50,8 +44,15 @@ public class ball extends Actor
 
         Actor actor3 = getOneIntersectingObject( Defense.class );
         if( actor3 != null ){
+            setLocation( getX(), getY() - py );
+            if( isTouching( Defense.class ) ){ 
+                px = px * -1; 
+                setLocation( getX(), getY() + py );
+            } else {
+                setLocation( getX(), getY() + py );
+                py = py * -1; 
+            }
             getWorld().removeObject( actor3 );
-            py=py*-1;
         }
 
         checkEdge();
