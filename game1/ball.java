@@ -29,7 +29,7 @@ public class ball extends Actor
         Actor actor1 = getOneIntersectingObject( barrier.class );
         if( actor1 != null ){
             getWorld().removeObject( actor1 );
-            py=py*-1;
+            py=Math.abs(py);
         }
 
         Actor actor2 = getOneIntersectingObject( Hantei.class );
