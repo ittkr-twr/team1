@@ -28,13 +28,8 @@ editor.fx.0.width=816
 editor.fx.0.x=991
 editor.fx.0.y=76
 height=585
-<<<<<<< HEAD
 package.numDependencies=6
-package.numTargets=7
-=======
-package.numDependencies=5
 package.numTargets=6
->>>>>>> aeb480dc4613275c77337acb79491dbe63e76b59
 project.charset=UTF-8
 publish.hasSource=false
 publish.locked=true
@@ -94,5 +89,5 @@ target6.y=0
 version=3.0.0
 width=944
 world.lastInstantiated=MyWorld
-xPosition=949
-yPosition=140
+xPosition=882
+yPosition=146

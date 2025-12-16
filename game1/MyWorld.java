@@ -25,11 +25,7 @@ public class MyWorld extends World
         }
 
         addObject( new gole(), 300, 25 );
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> aeb480dc4613275c77337acb79491dbe63e76b59
         addObject( new barrier(), 300, 40);
         
         addObject(new Rafael(), 300, 400);
