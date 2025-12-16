@@ -10,8 +10,8 @@ public class ball extends Actor
         setRotation(270);
     }
 
-    int px=0;
-    int py=-2;
+    int px= Math.random() < 0.5 ? 3 : -3;
+    int py=-3;
 
     public void act() 
     {
