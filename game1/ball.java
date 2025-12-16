@@ -31,6 +31,7 @@ public class ball extends Actor
             getWorld().removeObject( actor1 );
             py=py*-1;
         }
+
         Actor actor2 = getOneIntersectingObject( Rafael.class );
         if( actor2 != null ){
             py=py*-1;
@@ -41,7 +42,14 @@ public class ball extends Actor
             if( Greenfoot.isKeyDown( "left" ) ){
                 px=-2;
             }
-        }    
+        }  
+        Actor actor3 = getOneIntersectingObject( Defense.class );
+        if( actor3 != null ){
+            getWorld().removeObject( actor3 );
+            py=py*-1;
+        }
     }
-}
+}    
+
+
 
