@@ -31,6 +31,11 @@ public class MyWorld extends World
         addObject(new Rafael(), 300, 400);
 
         addObject( new ball(), 300, 300);
+
+
+
+        setActOrder(gole.class, barrier.class, Defense.class);
+
     }
     
     
