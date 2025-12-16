@@ -12,7 +12,7 @@ public class ball extends Actor
 
     int px=0;
     int py=-2;
-    
+
     public void act() 
     {
         if (isTouching(gole.class)) {
@@ -23,6 +23,12 @@ public class ball extends Actor
         int x = getX();
         int y = getY();
         setLocation(x+px,y+py);
+
+        Actor actor = getOneIntersectingObject( barrier.class );
+        if( actor != null ){
+            getWorld().removeObject( actor );
+            py=py*-1;
+        }
 
         Actor actor1 = getOneIntersectingObject( barrier.class );
         if( actor1 != null ){
@@ -40,11 +46,32 @@ public class ball extends Actor
             if( Greenfoot.isKeyDown( "left" ) ){
                 px=-2;
             }
-        }  
+        }
+
         Actor actor3 = getOneIntersectingObject( Defense.class );
         if( actor3 != null ){
             getWorld().removeObject( actor3 );
             py=py*-1;
+        }
+
+        checkEdge();
+    }   
+
+    private void checkEdge()
+    {
+        if(getX() <= 0 || getX() >= getWorld().getWidth() -1)
+        {
+            px=px*-1;
+        }
+
+        if(getY() <= 0)
+        {
+            py=py*-1;
+        }
+
+        if(getY() >= getWorld().getHeight() -1)
+        {
+            getWorld().removeObject( this );
         }
     }
 }    
