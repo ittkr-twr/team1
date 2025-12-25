@@ -25,18 +25,9 @@ public class ball extends Actor
         int x = getX();
         int y = getY();
 
-
-        Actor actor1 = getOneIntersectingObject( barrier.class );
-        if( actor1 != null ){
-            getWorld().removeObject( actor1 );
-            py=Math.abs(py);
-        }
-
         Actor actor2 = getOneIntersectingObject( Hantei.class );
         if( actor2 != null ){
-
             py=Math.abs(py) * -1;
-
         }
 
         Actor actor3 = getOneIntersectingObject( Defense.class );
@@ -50,6 +41,19 @@ public class ball extends Actor
                 py = py * -1; 
             }
             getWorld().removeObject( actor3 );
+
+        }
+        
+        Actor actor4 = getOneIntersectingObject( barrier.class );
+        if( actor4 != null ){
+            setLocation( getX(), getY() - py );
+            if( isTouching( barrier.class ) ){ 
+                px = px * -1; 
+                setLocation( getX(), getY() + py );
+            } else {
+                setLocation( getX(), getY() + py );
+                py = py * -1; 
+            }
         }
         
         setLocation(x+px,y+py);
