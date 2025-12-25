@@ -34,7 +34,7 @@ public class MyWorld extends World
 
 
 
-        setActOrder(Rafael.class,gole.class, barrier.class, Defense.class);
+        setActOrder(gole.class, Rafael.class, barrier.class, Defense.class, ball.class);
 
     }
 
