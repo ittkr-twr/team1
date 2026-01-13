@@ -18,7 +18,7 @@ public class ball extends Actor
     public void act() 
     {
         if (isTouching(gole.class)) {
-            getWorld().showText("CLEAR!", 300, 200);
+            Greenfoot.setWorld(new Clear());
             Greenfoot.stop();
         }
 
@@ -36,7 +36,6 @@ public class ball extends Actor
         if( actor2 != null ){
 
             py=Math.abs(py) * -1;
-
         }
 
         Actor actor3 = getOneIntersectingObject( Defense.class );
