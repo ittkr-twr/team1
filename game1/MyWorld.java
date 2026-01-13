@@ -8,8 +8,10 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class MyWorld extends World
 {
+
     GreenfootSound bgm = null;
-    private int defenseNum = 1;
+    
+    private int defenseNum = 21;
     public MyWorld()
     {    
         super(600, 400, 1); 
@@ -29,6 +31,10 @@ public class MyWorld extends World
     
     public void decrementDefenseNum() {
         defenseNum--;
+        
+        if (defenseNum <= 0) {
+            removeObjects(getObjects(barrier.class));
+        }
     }
 
     public void started(){
