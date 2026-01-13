@@ -41,6 +41,7 @@ public class ball extends Actor
                 py = py * -1; 
             }
             getWorld().removeObject( actor3 );
+            ((MyWorld) getWorld()).decrementDefenseNum();
 
         }
         
