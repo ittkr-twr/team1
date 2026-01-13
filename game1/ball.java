@@ -3,7 +3,6 @@ import greenfoot.*;
 public class ball extends Actor
 {
 
-
     public ball()
     {
         getImage().scale(30,30);
@@ -25,22 +24,15 @@ public class ball extends Actor
         int x = getX();
         int y = getY();
 
-
-        Actor actor1 = getOneIntersectingObject( barrier.class );
-        if( actor1 != null ){
-            getWorld().removeObject( actor1 );
-            py=py*-1;
-        }
-
         Actor actor2 = getOneIntersectingObject( Hantei.class );
         if( actor2 != null ){
-
             py=Math.abs(py) * -1;
-
+            Greenfoot.playSound("kick.mp3");
         }
 
         Actor actor3 = getOneIntersectingObject( Defense.class );
         if( actor3 != null ){
+            Greenfoot.playSound("attack.mp3");
             setLocation( getX(), getY() - py );
             if( isTouching( Defense.class ) ){ 
                 px = px * -1; 
@@ -50,6 +42,18 @@ public class ball extends Actor
                 py = py * -1; 
             }
             getWorld().removeObject( actor3 );
+        }
+        
+        Actor actor4 = getOneIntersectingObject( barrier.class );
+        if( actor4 != null ){
+            setLocation( getX(), getY() - py );
+            if( isTouching( barrier.class ) ){ 
+                px = px * -1; 
+                setLocation( getX(), getY() + py );
+            } else {
+                setLocation( getX(), getY() + py );
+                py = py * -1; 
+            }
         }
         
         setLocation(x+px,y+py);
@@ -73,6 +77,9 @@ public class ball extends Actor
         {
             getWorld().showText("Gameover", 300, 200);
             getWorld().removeObject( this );
+            
         }
     }
+    
+
 }    
