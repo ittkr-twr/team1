@@ -1,7 +1,6 @@
 #Greenfoot project file
 class.Clear.image=Samba\ shot.jpeg
 class.Defense.image=\u30C7\u30A3\u30A8\u30B4.png
-class.Hantei.image=sand2.jpg
 class.MyWorld.image=ko-to\ .jpg
 class.Rafael.image=\u30E9\u30D5\u30A1\u30A8\u30EB.png
 class.ball.image=ball.png
@@ -11,7 +10,11 @@ dependency1.from=MyWorld
 dependency1.to=gole
 dependency1.type=UsesDependency
 dependency10.from=ball
+<<<<<<< HEAD
 dependency10.to=Defense
+=======
+dependency10.to=barrier
+>>>>>>> 7e17b37c90188150d1f87626790d77257362beb8
 dependency10.type=UsesDependency
 dependency11.from=Rafael
 dependency11.to=Hantei
@@ -29,7 +32,11 @@ dependency5.from=MyWorld
 dependency5.to=ball
 dependency5.type=UsesDependency
 dependency6.from=ball
+<<<<<<< HEAD
 dependency6.to=Clear
+=======
+dependency6.to=MyWorld
+>>>>>>> 7e17b37c90188150d1f87626790d77257362beb8
 dependency6.type=UsesDependency
 dependency7.from=ball
 dependency7.to=gole
@@ -42,11 +49,19 @@ dependency9.to=Hantei
 dependency9.type=UsesDependency
 editor.fx.0.height=739
 editor.fx.0.width=816
+<<<<<<< HEAD
 editor.fx.0.x=129
 editor.fx.0.y=184
 height=585
 package.numDependencies=11
 package.numTargets=8
+=======
+editor.fx.0.x=71
+editor.fx.0.y=262
+height=1047
+package.numDependencies=11
+package.numTargets=7
+>>>>>>> 7e17b37c90188150d1f87626790d77257362beb8
 project.charset=UTF-8
 publish.hasSource=false
 publish.locked=true
@@ -86,7 +101,7 @@ target4.height=50
 target4.name=Hantei
 target4.showInterface=false
 target4.type=ClassTarget
-target4.width=90
+target4.width=80
 target4.x=0
 target4.y=0
 target5.height=50
@@ -118,7 +133,12 @@ target8.width=80
 target8.x=0
 target8.y=0
 version=3.0.0
-width=944
+width=974
 world.lastInstantiated=MyWorld
+<<<<<<< HEAD
 xPosition=6
 yPosition=173
+=======
+xPosition=0
+yPosition=0
+>>>>>>> 7e17b37c90188150d1f87626790d77257362beb8

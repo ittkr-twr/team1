@@ -14,7 +14,7 @@ public class barrier extends Actor
      */
     public barrier()
     {
-        getImage().scale(200,100);
+        getImage().scale(250,100);
     }
     public void act()
     {
