@@ -8,12 +8,15 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class MyWorld extends World
 {
+
+    GreenfootSound bgm = null;
     
     private int defenseNum = 21;
     public MyWorld()
     {    
         super(600, 400, 1); 
-
+        bgm = new GreenfootSound("bgm.mp3");
+        
         addObject( new gole(), 300, 25 );
         addObject( new barrier(), 300, 40);
         for(int i=0; i<3; i++) {
@@ -35,4 +38,10 @@ public class MyWorld extends World
     }
    
 
+    public void started(){
+        bgm.playLoop();
+    }
+    public void stopped(){
+        bgm.stop();
+    }
 }
