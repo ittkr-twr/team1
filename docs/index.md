@@ -4,11 +4,11 @@
 ## Concept
    - The protagonist kicks the ball in a modern Brazilian football match, defeating the block (enemy) to secure victory.
 ## Overview
-   - このゲームはブラジルのサッカー大会を舞台に、主人公が優勝を目指すアクションゲームです。
-   - クリア条件やゲームオーバー条件を理解し、戦略的にプレイしましょう！
-   - ブラジルの熱気あふれるサッカー大会。観客の歓声、選手たちの情熱、そしてあなたの挑戦が始まります。
-   - 主人公はブラジルのサッカー大会で優勝を狙う。
-   - 強敵を倒し、ゴールを決めて栄光を掴め！
+   - This game is an action title set against the backdrop of a Brazilian football tournament, in which the protagonist strives for victory.
+   - Understand the game's clear conditions and game over conditions, and play strategically!
+   - Brazil's football tournament in full swing. The roar of the crowd, the passion of the players, and your challenge begins.
+   - The protagonist aims to win the Brazilian football tournament.
+   - Defeat mighty foes, score goals, and seize glory!
   
 ## Platform
    - Green foot
