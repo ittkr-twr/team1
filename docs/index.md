@@ -1,40 +1,40 @@
-# Samba Soccer Showdown #
-## Genre
-   - Breakout clone
-## Concept
-   - The protagonist kicks the ball in a modern Brazilian football match, defeating the block (enemy) to secure victory.
-## Overview
-   - This game is an action title set against the backdrop of a Brazilian football tournament, in which the protagonist strives for victory.
-   - Understand the game's clear conditions and game over conditions, and play strategically!
-   - Brazil's football tournament in full swing. The roar of the crowd, the passion of the players, and your challenge begins.
-   - The protagonist aims to win the Brazilian football tournament.
-   - Defeat mighty foes, score goals, and seize glory!
-  
-## Platform
-   - Green foot
+# サンバサッカーショーダウン
 
-## Controls
-   - **Start** : Space key
-   - **Movement** :　arrow keys
-  
- 
-## Game Rules
-- **Clear Condition**: Destroy blocks (enemy) to remove the goalkeeper's barrier, then score a goal.
-- **Game Over Condition**: The ball goes out of bounds.
+## ジャンル
+- ブロック崩し系アクションゲーム
 
-## Stage Flow
-1. Match begins　(**Space key push**)
-2. Enemy blocks
-3. Goalkeeper's barrier is removed
-4. Aim for the goal
-5. Victory or Game Over
+## コンセプト
+ブラジルの熱いサッカートーナメントを舞台に、あなたは主人公 **ラファエル・サンバ・ショット・オリヴェイラ** を操作します。  
+ボールを巧みに蹴り、ブロック（敵）を破壊してゴールを目指し、勝利を掴みましょう！
 
+## ゲーム概要
+- 試合の臨場感あふれるスタジアムで、観客の歓声と選手たちの情熱を感じながらプレイ。  
+- クリア条件やゲームオーバー条件を理解し、戦略的にボールを操作することがカギです。  
+- 強敵を倒してゴールを決め、ブラジルのサッカートーナメントで頂点を目指しましょう！
 
- - Character
-   - Name : Rafael Samba Shot Oliveira
-   - Role : The character you control during gameplay
-   - Characteristics : Brazilian
-   - Special attack : **Samba Shot** ![Samba shot](https://github.com/user-attachments/assets/ec7abb72-a691-42fd-bfbb-db7e2364ded7)
+## プラットフォーム
+- Green foot
+
+## 操作方法
+- **スタート**：スペースキー  
+- **移動**：矢印キー
+
+## ゲームルール
+- **クリア条件**：ブロック（敵）を破壊してゴールキーパーのバリアを解除し、ゴールを決めること  
+- **ゲームオーバー条件**：ボールがフィールド外に出た場合
+
+## ステージの流れ
+1. 試合開始（**スペースキー押下**）  
+2. 敵ブロック登場  
+3. ゴールキーパーのバリア解除  
+4. ゴールを狙う  
+5. 勝利またはゲームオーバー
+
+## キャラクター紹介
+- **名前**：ラファエル・サンバ・ショット・オリヴェイラ  
+- **役割**：操作キャラクター  
+- **特徴**：ブラジル出身  
+- **必殺技**：**サンバショット** ![Samba shot](https://github.com/user-attachments/assets/ec7abb72-a691-42fd-bfbb-db7e2364ded7)
 
 
 
