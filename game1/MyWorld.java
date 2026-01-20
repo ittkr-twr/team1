@@ -36,6 +36,7 @@ public class MyWorld extends World
             removeObjects(getObjects(barrier.class));
         }
     }
+   
 
     public void started(){
         bgm.playLoop();

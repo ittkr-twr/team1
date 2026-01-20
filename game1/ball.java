@@ -17,7 +17,8 @@ public class ball extends Actor
     public void act() 
     {
         if (isTouching(gole.class)) {
-            getWorld().showText("CLEAR!", 300, 200);
+            Greenfoot.setWorld(new Clear());
+            Greenfoot.playSound("clear.mp3");
             Greenfoot.stop();
         }
 
