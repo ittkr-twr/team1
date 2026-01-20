@@ -9,13 +9,20 @@ public class ball extends Actor
         setRotation(270);
     }
 
-
     int px= Math.random() < 0.5 ? 3 : -3;
     int py=-3;
-
+    int waitTimer = 99;
 
     public void act() 
     {
+        if (waitTimer > 0) {
+            waitTimer--;
+            int count = waitTimer / 33 + 1; 
+            getWorld().showText("Start: " + count, 300, 200);
+            return;
+        }
+        getWorld().showText("", 300, 200);
+
         if (isTouching(gole.class)) {
             Greenfoot.setWorld(new Clear());
             Greenfoot.stop();
@@ -45,9 +52,7 @@ public class ball extends Actor
 
             ((MyWorld) getWorld()).decrementDefenseNum();
 
-
         }
-        
         Actor actor4 = getOneIntersectingObject( barrier.class );
         if( actor4 != null ){
             setLocation( getX(), getY() - py );
@@ -59,7 +64,7 @@ public class ball extends Actor
                 py = py * -1; 
             }
         }
-        
+
         setLocation(x+px,y+py);
 
         checkEdge();
@@ -81,9 +86,8 @@ public class ball extends Actor
         {
             getWorld().showText("Gameover", 300, 200);
             getWorld().removeObject( this );
-            
+
         }
     }
-    
 
 }    
