@@ -25,6 +25,7 @@ public class ball extends Actor
 
         if (isTouching(gole.class)) {
             Greenfoot.setWorld(new Clear());
+            Greenfoot.playSound("clear.mp3");
             Greenfoot.stop();
         }
 
