@@ -10,15 +10,14 @@ dependency1.from=MyWorld
 dependency1.to=gole
 dependency1.type=UsesDependency
 dependency10.from=ball
-<<<<<<< HEAD
 dependency10.to=Defense
-=======
-dependency10.to=barrier
->>>>>>> 7e17b37c90188150d1f87626790d77257362beb8
 dependency10.type=UsesDependency
-dependency11.from=Rafael
-dependency11.to=Hantei
+dependency11.from=ball
+dependency11.to=barrier
 dependency11.type=UsesDependency
+dependency12.from=Rafael
+dependency12.to=Hantei
+dependency12.type=UsesDependency
 dependency2.from=MyWorld
 dependency2.to=barrier
 dependency2.type=UsesDependency
@@ -32,42 +31,24 @@ dependency5.from=MyWorld
 dependency5.to=ball
 dependency5.type=UsesDependency
 dependency6.from=ball
-<<<<<<< HEAD
 dependency6.to=Clear
-=======
-dependency6.to=MyWorld
->>>>>>> 7e17b37c90188150d1f87626790d77257362beb8
 dependency6.type=UsesDependency
 dependency7.from=ball
-dependency7.to=gole
+dependency7.to=MyWorld
 dependency7.type=UsesDependency
 dependency8.from=ball
-dependency8.to=barrier
+dependency8.to=gole
 dependency8.type=UsesDependency
 dependency9.from=ball
 dependency9.to=Hantei
 dependency9.type=UsesDependency
-editor.fx.0.height=770
-editor.fx.0.width=816
-<<<<<<< HEAD
-<<<<<<< HEAD
-editor.fx.0.x=129
-editor.fx.0.y=184
-height=585
-package.numDependencies=11
-package.numTargets=8
-=======
-editor.fx.0.x=71
-editor.fx.0.y=262
-height=1047
-=======
-editor.fx.0.x=433
-editor.fx.0.y=139
+editor.fx.0.height=0
+editor.fx.0.width=0
+editor.fx.0.x=0
+editor.fx.0.y=0
 height=838
->>>>>>> fd976e23c41f74ee3ad95823ceef9f8ff463da14
-package.numDependencies=11
-package.numTargets=7
->>>>>>> 7e17b37c90188150d1f87626790d77257362beb8
+package.numDependencies=12
+package.numTargets=8
 project.charset=UTF-8
 publish.hasSource=false
 publish.locked=true
@@ -141,15 +122,5 @@ target8.y=0
 version=3.0.0
 width=974
 world.lastInstantiated=MyWorld
-<<<<<<< HEAD
-<<<<<<< HEAD
-xPosition=6
-yPosition=173
-=======
-xPosition=0
-yPosition=0
->>>>>>> 7e17b37c90188150d1f87626790d77257362beb8
-=======
-xPosition=820
-yPosition=104
->>>>>>> fd976e23c41f74ee3ad95823ceef9f8ff463da14
+xPosition=24
+yPosition=148
