@@ -10,7 +10,7 @@ public class ball extends Actor
     int py=-3;
     int waitTimer = 99;
     boolean justBouncedFromHantei = false;
-    
+
     public void act() 
     {
         if (waitTimer > 0) {
@@ -20,14 +20,35 @@ public class ball extends Actor
             return;
         }
         getWorld().showText("", 300, 200);
+
+        // ゴールの判定
         if (isTouching(gole.class)) {
-            Greenfoot.setWorld(new Clear());
-            Greenfoot.playSound("clear.mp3");
-            Greenfoot.stop();
+            Actor goal = getOneIntersectingObject(gole.class);
+            if(goal != null){
+                // ゴールの中心からボールへの相対位置を計算
+                int relativeX = getX() - goal.getX();
+
+                // ゴールの画像サイズを取得（ゴールのサイズに応じて調整してください）
+                int goalWidth = goal.getImage().getWidth() / 2;
+
+                // 左右から当たった場合（横からの衝突）
+                if(Math.abs(relativeX) > goalWidth * 0.7) {
+                    px = px * -1;
+                    Greenfoot.playSound("kick.mp3");
+                }
+                // 上下から当たった場合（ゴールに入った）
+                else {
+                    Greenfoot.setWorld(new Clear());
+                    Greenfoot.playSound("clear.mp3");
+                    Greenfoot.stop();
+                    return;
+                }
+            }
         }
+
         int x = getX();
         int y = getY();
-        
+
         Actor actor2 = getOneIntersectingObject( Hantei.class );
         if( actor2 != null && !justBouncedFromHantei ){
             py=Math.abs(py) * -1;
@@ -36,7 +57,7 @@ public class ball extends Actor
         } else if( actor2 == null ){
             justBouncedFromHantei = false;
         }
-        
+
         Actor actor3 = getOneIntersectingObject( Defense.class );
         if( actor3 != null ){
             Greenfoot.playSound("attack.mp3");
@@ -65,6 +86,7 @@ public class ball extends Actor
         setLocation(x+px,y+py);
         checkEdge();
     }   
+
     private void checkEdge()
     {
         if(getX() <= 0 || getX() >= getWorld().getWidth() -1)
