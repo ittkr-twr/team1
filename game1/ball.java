@@ -79,6 +79,7 @@ public class ball extends Actor
         {
             getWorld().showText("Gameover", 300, 200);
             getWorld().removeObject( this );
+            Greenfoot.setWorld(new Gameover());
         }
     }
 }
