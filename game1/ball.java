@@ -85,7 +85,7 @@ public class ball extends Actor
 
         if(getY() >= getWorld().getHeight() -1)
         {
-            getWorld().showText("Gameover", 300, 200);
+            Greenfoot.setWorld(new Gameover());
             getWorld().removeObject( this );
 
         }
