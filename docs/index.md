@@ -15,8 +15,7 @@
 ## プラットフォーム
 - Green foot
 
-## 操作方法
-- **スタート**：スペースキー  
+## 操作方法 
 - **移動**：矢印キー
 
 ## ゲームルール
@@ -34,7 +33,8 @@
 - **名前**：Rafael Samba Shot Oliveira  
 - **役割**：操作キャラクター  
 - **特徴**：ブラジル出身  
-- **必殺技**：**Samba Shot** ![Samba shot](https://github.com/user-attachments/assets/ec7abb72-a691-42fd-bfbb-db7e2364ded7)
+- **必殺技**：**Samba Shot**
+- ![Samba shot](https://github.com/user-attachments/assets/ec7abb72-a691-42fd-bfbb-db7e2364ded7)
 
 
 
