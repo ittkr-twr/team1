@@ -1,7 +1,6 @@
 #Greenfoot project file
 class.Clear.image=Samba\ shot.jpeg
 class.Defense.image=\u30C7\u30A3\u30A8\u30B4.png
-class.Gameover.image=brightened_game_over.png
 class.MyWorld.image=ko-to\ .jpg
 class.Rafael.image=\u30E9\u30D5\u30A1\u30A8\u30EB.png
 class.ball.image=ball.png
@@ -11,17 +10,14 @@ dependency1.from=MyWorld
 dependency1.to=gole
 dependency1.type=UsesDependency
 dependency10.from=ball
-dependency10.to=Hantei
+dependency10.to=Defense
 dependency10.type=UsesDependency
 dependency11.from=ball
-dependency11.to=Defense
+dependency11.to=barrier
 dependency11.type=UsesDependency
-dependency12.from=ball
-dependency12.to=barrier
+dependency12.from=Rafael
+dependency12.to=Hantei
 dependency12.type=UsesDependency
-dependency13.from=Rafael
-dependency13.to=Hantei
-dependency13.type=UsesDependency
 dependency2.from=MyWorld
 dependency2.to=barrier
 dependency2.type=UsesDependency
@@ -41,17 +37,24 @@ dependency7.from=ball
 dependency7.to=MyWorld
 dependency7.type=UsesDependency
 dependency8.from=ball
-dependency8.to=Gameover
+dependency8.to=gole
 dependency8.type=UsesDependency
 dependency9.from=ball
-dependency9.to=gole
+dependency9.to=Hantei
 dependency9.type=UsesDependency
+<<<<<<< HEAD
 editor.fx.0.height=0
 editor.fx.0.width=0
 editor.fx.0.x=0
 editor.fx.0.y=0
+=======
+editor.fx.0.height=739
+editor.fx.0.width=816
+editor.fx.0.x=552
+editor.fx.0.y=100
+>>>>>>> d3e2c5248734e10940d006332733b317f8d064f3
 height=838
-package.numDependencies=13
+package.numDependencies=12
 package.numTargets=9
 project.charset=UTF-8
 publish.hasSource=false
@@ -133,5 +136,10 @@ target9.y=0
 version=3.0.0
 width=974
 world.lastInstantiated=MyWorld
+<<<<<<< HEAD
 xPosition=292
 yPosition=193
+=======
+xPosition=665
+yPosition=201
+>>>>>>> d3e2c5248734e10940d006332733b317f8d064f3
