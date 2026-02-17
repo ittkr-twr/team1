@@ -20,30 +20,11 @@ public class ball extends Actor
             return;
         }
         getWorld().showText("", 300, 200);
-
-        // ゴールの判定
+        
         if (isTouching(gole.class)) {
-            Actor goal = getOneIntersectingObject(gole.class);
-            if(goal != null){
-                // ゴールの中心からボールへの相対位置を計算
-                int relativeX = getX() - goal.getX();
-
-                // ゴールの画像サイズを取得（ゴールのサイズに応じて調整してください）
-                int goalWidth = goal.getImage().getWidth() / 2;
-
-                // 左右から当たった場合（横からの衝突）
-                if(Math.abs(relativeX) > goalWidth * 0.7) {
-                    px = px * -1;
-                    Greenfoot.playSound("kick.mp3");
-                }
-                // 上下から当たった場合（ゴールに入った）
-                else {
-                    Greenfoot.setWorld(new Clear());
-                    Greenfoot.playSound("clear.mp3");
-                    Greenfoot.stop();
-                    return;
-                }
-            }
+            Greenfoot.setWorld(new Clear());
+            Greenfoot.playSound("clear.mp3");
+            Greenfoot.stop();
         }
 
         int x = getX();

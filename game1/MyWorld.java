@@ -11,7 +11,7 @@ public class MyWorld extends World
 
     GreenfootSound bgm = null;
     
-    private int defenseNum = 21;
+    private int defenseNum = 1;
     public MyWorld()
     {    
         super(600, 400, 1); 
@@ -19,8 +19,8 @@ public class MyWorld extends World
         
         addObject( new gole(), 300, 25 );
         addObject( new barrier(), 300, 40);
-        for(int i=0; i<3; i++) {
-            for(int j=0; j<7; j++) {
+        for(int i=0; i<1; i++) {
+            for(int j=0; j<1; j++) {
                 addObject(new Defense(), 80 + 70*j, 80 + i*60);
             }
         }
